@@ -77,10 +77,9 @@ function pad(value) {
   return `${value}`.padStart(2, '0');
 }
 
-timerBox.style.width = "250px";
+timerBox.style.width = "180px";
 timerBox.style.display = "flex";
-timerBox.style.justifyContent = 'space-between';
-timerBox.style.gap = '60px 20px';
+timerBox.style.gap = '60px 10px';
 timerBox.style.textAlign = `center`;
 
 
