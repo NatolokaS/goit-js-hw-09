@@ -48,9 +48,9 @@ function onStartClick() {
     dataSeconds.textContent = pad(seconds);
 
     if (timeToFinish < 1000) {
-      spans.forEach(item => item.classList.toggle('end'));
+      timeOutputs.forEach(item => item.classList.toggle('end'));
       clearInterval(timerId);
-      date.disabled = false;
+      dateInput.disabled = false;
     }
   }, 1000);
 }
@@ -80,6 +80,4 @@ function pad(value) {
 timerBox.style.width = "180px";
 timerBox.style.display = "flex";
 timerBox.style.gap = '60px 10px';
-timerBox.style.textAlign = `center`;
-
-
+timerBox.style.textAlign = "center";
